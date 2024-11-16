@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Custom Ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+                             
+http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>
+        A sample ruleset to check for code quality issues.
+    </description>
+
+    <!-- Example rules -->
+    <rule ref="rulesets/java/design.xml/SimplifyBooleanExpressions"/>
+    <rule ref="rulesets/java/basic.xml/UnusedImports"/>
+    <rule ref="rulesets/java/design.xml/UseUtilityClass"/>
+</ruleset>
+
