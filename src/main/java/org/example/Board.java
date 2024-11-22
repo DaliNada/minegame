@@ -55,6 +55,8 @@ public class Board extends JPanel {
 
     private JLabel statusbar;
 
+    private final Random random = new Random();
+
     public Board(JLabel statusbar) {
         this.statusbar = statusbar;
 
@@ -92,7 +94,7 @@ public class Board extends JPanel {
 
         i = 0;
         while (i < mines) {
-            position = (int) (all_cells * random.nextDouble());
+            position = random.nextInt(all_cells);
 
             if ((position < all_cells) && (field[position] != COVERED_MINE_CELL)) {
                 current_col = position % cols;
